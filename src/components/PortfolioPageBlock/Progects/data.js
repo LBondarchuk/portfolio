@@ -3,7 +3,7 @@ export const items = [
     id: 1,
     color: 'from-red-300 to-blue-300',
     title: 'Next Portfolio',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    desc: 'An interactive portfolio built with Next.js and Tailwind CSS, showcasing my web development skills. Using Framer Motion, I implemented smooth animations and responsive design for intuitive navigation.',
     video: '/1.mov',
     link: '',
     codeLink: 'https://github.com/LBondarchuk/portfolio',
