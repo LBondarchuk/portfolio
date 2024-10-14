@@ -66,7 +66,7 @@ const ResponsiveMenu = ({ links }) => {
   return (
     <div className='md:hidden'>
       <button
-        className='w-10 h-8 flex flex-col justify-between z-50 relative'
+        className='w-10 h-8 flex flex-col justify-between z-50 relative mr-2'
         onClick={() => setOpen((prev) => !prev)}
       >
         <motion.div
