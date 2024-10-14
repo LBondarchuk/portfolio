@@ -6,7 +6,7 @@ export const items = [
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
     video: '/1.mov',
     link: '',
-    codeLink: 'c',
+    codeLink: 'https://github.com/LBondarchuk/portfolio',
   },
   {
     id: 2,

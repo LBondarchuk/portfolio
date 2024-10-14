@@ -30,13 +30,15 @@ const Progects = ({ x }) => {
               </div>
               <p className='w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]'>{item.desc}</p>
               <div className='flex gap-10 items-center transition-opacity'>
-                <Link href={item.link} className='flex justify-end '>
-                  <button className='hover:bg-purple-50 p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded'>
-                    See Demo
-                  </button>
-                </Link>
+                {item.link && (
+                  <Link href={item.link} className='flex justify-end ' target='_blanck'>
+                    <button className='hover:bg-purple-50 p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded'>
+                      See Demo
+                    </button>
+                  </Link>
+                )}
 
-                <Link href={item.codeLink} className='flex justify-end'>
+                <Link href={item.codeLink} className='flex justify-end' target='_blanck'>
                   <button className='hover:bg-purple-50 p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded'>
                     See Code
                   </button>

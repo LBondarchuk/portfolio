@@ -34,12 +34,35 @@ const Navbar = () => {
       </div>
 
       <div className='hidden md:flex gap-4 w-1/3 justify-end'>
-        <Link href='https://github.com/LBondarchuk'>
+        <Link
+          href='tel:+380689262855'
+          target='_blank'
+          className='hover:scale-105 hover:opacity-90 transition-opacity'
+        >
+          <Image src='/telephone.png' alt='' width={24} height={24} />
+        </Link>
+        <Link
+          href='https://github.com/LBondarchuk'
+          target='_blank'
+          className='hover:scale-105 hover:opacity-90 transition-opacity'
+        >
           <Image src='/github.png' alt='' width={24} height={24} />
         </Link>
 
-        <Link href='https://www.linkedin.com/in/leonid-bondarchuk-571519284/'>
+        <Link
+          href='https://www.linkedin.com/in/leonid-bondarchuk-571519284/'
+          target='_blank'
+          className='hover:scale-105 hover:opacity-90 transition-opacity'
+        >
           <Image src='/linkedin.png' alt='' width={24} height={24} />
+        </Link>
+
+        <Link
+          href='https://t.me/Leonid_Bondarchuk'
+          target='_blank'
+          className='hover:scale-105 hover:opacity-90 transition-opacity'
+        >
+          <Image src='/telegram.png' alt='' width={24} height={24} />
         </Link>
       </div>
 

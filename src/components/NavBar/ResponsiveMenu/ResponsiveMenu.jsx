@@ -1,9 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const ResponsiveMenu = ({ links }) => {
   const [open, setOpen] = useState(false);
+  const path = usePathname();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [path]);
 
   const topVariants = {
     closed: {
