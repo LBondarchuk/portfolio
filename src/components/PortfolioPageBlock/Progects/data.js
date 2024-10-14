@@ -1,0 +1,38 @@
+export const items = [
+  {
+    id: 1,
+    color: 'from-red-300 to-blue-300',
+    title: 'Next Portfolio',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    video: '/1.mov',
+    link: '',
+    codeLink: 'c',
+  },
+  {
+    id: 2,
+    color: 'from-blue-300 to-violet-300',
+    title: 'React Mobile',
+    desc: 'This app is Apple electronics store that has multiple product categories, a product cart, and a list of favorites',
+    video: './2.mov',
+    link: 'https://lbondarchuk.github.io/react_phone-catalog/#/',
+    codeLink: 'https://github.com/LBondarchuk/react_phone-catalog/tree/develop',
+  },
+  {
+    id: 3,
+    color: 'from-blue-300 to-violet-300',
+    title: 'Mind Merge (Pure JS)',
+    desc: 'This game is based on the logic of the mega-popular game 2048. It is a game for developing logical thinking and memory.',
+    video: './3.mov',
+    link: 'https://lbondarchuk.github.io/js_2048_game/',
+    codeLink: 'https://github.com/LBondarchuk/js_2048_game/tree/develop',
+  },
+  {
+    id: 4,
+    color: 'from-blue-300 to-violet-300',
+    title: 'React Task Organizer App',
+    desc: 'The Task Organizer App is an interactive tool designed for organizing and tracking tasks using a tree-like structure. Each element within the tree can represent either a category or a service, and it allows for functionalities such as adding, editing, moving, and deleting.',
+    video: './4.mov',
+    link: 'https://lbondarchuk.github.io/task-app/',
+    codeLink: 'https://github.com/LBondarchuk/task-app',
+  },
+];
