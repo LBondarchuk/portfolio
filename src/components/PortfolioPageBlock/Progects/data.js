@@ -1,16 +1,16 @@
 export const items = [
   {
     id: 1,
-    color: 'from-red-300 to-blue-300',
+    color: 'from-[#d7d2cc] to-[#304352]',
     title: 'Next Portfolio',
-    desc: 'An interactive portfolio built with Next.js and Tailwind CSS, showcasing my web development skills. Using Framer Motion, I implemented smooth animations and responsive design for intuitive navigation.',
+    desc: 'An interactive portfolio built with Next.js and Tailwind CSS, showcasing my web development skills. Using Framer Motion.',
     video: '/1.mov',
     link: '',
     codeLink: 'https://github.com/LBondarchuk/portfolio',
   },
   {
     id: 2,
-    color: 'from-blue-300 to-violet-300',
+    color: 'from-[#304352] to-[#ffcc33]',
     title: 'React Mobile',
     desc: 'This app is Apple electronics store that has multiple product categories, a product cart, and a list of favorites',
     video: './2.mov',
@@ -19,7 +19,7 @@ export const items = [
   },
   {
     id: 3,
-    color: 'from-blue-300 to-violet-300',
+    color: 'from-[#ffcc33] to-[#525252]',
     title: 'Mind Merge (Pure JS)',
     desc: 'This game is based on the logic of the mega-popular game 2048. It is a game for developing logical thinking and memory.',
     video: './3.mov',
@@ -28,9 +28,9 @@ export const items = [
   },
   {
     id: 4,
-    color: 'from-blue-300 to-violet-300',
+    color: 'from-[#525252] to-[#ffcc33]',
     title: 'React Task Organizer App',
-    desc: 'The Task Organizer App is an interactive tool designed for organizing and tracking tasks using a tree-like structure. Each element within the tree can represent either a category or a service, and it allows for functionalities such as adding, editing, moving, and deleting.',
+    desc: 'The Task Organizer App is an interactive tool designed for organizing and tracking tasks using a tree-like structure. ',
     video: './4.mov',
     link: 'https://lbondarchuk.github.io/task-app/',
     codeLink: 'https://github.com/LBondarchuk/task-app',

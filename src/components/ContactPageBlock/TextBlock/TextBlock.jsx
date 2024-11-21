@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const TextBlock = () => {
   const text = 'Say Hello';
   return (
-    <div className='h-1/2 min-h-[400px] lg:h-full lg:w-1/2 flex items-center justify-center text-6xl'>
+    <div className='h-1/2 min-h-[400px] lg:h-full lg:w-1/2 flex items-center justify-center text-6xl text-white '>
       <div>
         {text.split('').map((letter, index) => (
           <motion.span

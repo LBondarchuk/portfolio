@@ -1,6 +1,7 @@
 'use client';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
 
 const Form = () => {
   const [success, setSuccess] = useState(false);
@@ -55,31 +56,41 @@ const Form = () => {
     <form
       onSubmit={sendEmail}
       ref={form}
-      className='min-h-[600px] h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center  p-5 lg:p-24'
+      className='min-h-[600px] mt-1 h-1/2 lg:h-full lg:w-1/2 shadow-lg  shadow-white rounded-xl text-xl flex flex-col gap-4 justify-center  p-5 lg:p-10'
     >
       <span>Dear Leonid</span>
       <div className='flex flex-col gap-1'>
         <textarea
           rows={3}
-          className='bg-white bg-opacity-50 rounded-xl border-b-2 border-b-black outline-none resize-none p-4'
+          className='bg-white bg-opacity-80 rounded-xl  focus:shadow focus:shadow-black outline-none resize-none p-4'
           name='user_message'
         />
-        {messageError && <span className='text-red-400  text-xs'>{messageError}</span>}
+        {messageError && <span className='text-red-600  text-xs'>{messageError}</span>}
       </div>
       <span>My mail address is:</span>
       <div className='flex flex-col gap-1'>
         <input
           name='user_email'
           type='text'
-          className='bg-white bg-opacity-50 p-4 rounded-xl h-[56px] border-b-2 border-b-black outline-none'
+          className='bg-white bg-opacity-80 p-4 rounded-xl h-[56px]  border-b-black outline-none focus:shadow focus:shadow-black'
         />
-        {emailError && <span className='text-red-400 text-xs'>{emailError}</span>}
+        {emailError && <span className='text-red-600 text-xs'>{emailError}</span>}
       </div>
       <span>Regards</span>
       <div className='flex flex-col gap-2'>
-        <button className='bg-purple-200 rounded font-semibold hover:bg-white hover:ring-2 transition-colors ring-purple-200 text-gray-600 p-4'>
+        <motion.button
+          whileHover={{
+            scale: '1.01',
+            opacity: '0.8',
+            background: '#fff',
+            color: 'black',
+            borderColor: 'black',
+          }}
+          whileTap={{ scale: '0.99' }}
+          className='bg-black  rounded-xl font-semibold border border-white   ring-purple-200 text-white p-4'
+        >
           Send
-        </button>
+        </motion.button>
         {success && (
           <span className='text-green-600 font-semibold'>
             Your message has been sent successfully!

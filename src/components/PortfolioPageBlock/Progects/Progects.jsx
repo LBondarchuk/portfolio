@@ -7,7 +7,10 @@ const Progects = ({ x }) => {
   return (
     <div className='sticky top-0 flex h-screen gap-4 items-center overflow-hidden'>
       <motion.div style={{ x }} className='flex'>
-        <div className='h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300' />
+        <div
+          className='h-screen w-screen flex items-center justify-center bg-gradient-to-r from-[#304352
+] to-[#d7d2cc]'
+        />
         {items.map((item) => (
           <div
             className={`h-screen w-screen  flex pt-20 lg:pt-5 lg:items-center justify-center bg-gradient-to-r ${item.color}`}

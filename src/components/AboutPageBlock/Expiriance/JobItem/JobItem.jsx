@@ -5,7 +5,7 @@ const JobItem = ({ title, description, time, place }) => {
 
       <div className='p-3 text-sm italic'>{description} </div>
 
-      <div className='p-3 text-red-400 text-sm font-semibold'>{time}</div>
+      <div className='p-3 text-white text-sm font-semibold'>{time}</div>
 
       <div className='p-1 rounded bg-white text-sm font-semibold w-fit'>{place}</div>
     </div>
